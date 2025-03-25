@@ -11,8 +11,8 @@ namespace Chronos
             Stopwatch crono1 = new Stopwatch();
             Stopwatch crono2 = new Stopwatch();
 
-            string elapsedtime1;
-            string elapsedtime2;
+            //string elapsedtime1;
+            //string elapsedtime2;
 
             crono1.Start();
             Thread.Sleep(500);
