@@ -10,15 +10,31 @@ namespace MyGame
         private string name;
         private float health;
         private float shield;
-        public Enemy (string name)
+        public Enemy ()
         {
-            this.name = name;
+            this.name = SetName();
             health = 100;
             shield = 0;
         }
 
         public string GetName()
         {
+            return name;
+        }
+        public float GetHealth()
+        {
+            return health;
+        }
+        public float GetShield()
+        {
+            return shield;
+        }
+
+        public string SetName()
+        {
+            string newname = Console.ReadLine();
+            newname = newname.Substring(0,8);
+            name = newname;
             return name;
         }
 
