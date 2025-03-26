@@ -24,6 +24,8 @@ namespace MyGame
             enemies[0].TakeDamage(75);
 
             enemies[0].PickupPowerUp(PowerUp.Health,25);
+
+            Console.WriteLine(Enemy.GetPickups());
         }
     }
 }

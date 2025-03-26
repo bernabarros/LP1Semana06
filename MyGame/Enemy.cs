@@ -10,6 +10,7 @@ namespace MyGame
         private string name;
         private float health;
         private float shield;
+        static int power_pickups;
         public Enemy ()
         {
             this.name = SetName();
@@ -17,6 +18,10 @@ namespace MyGame
             shield = 0;
         }
 
+        static Enemy()
+        {
+            power_pickups = 0;
+        }
         public string GetName()
         {
             return name;
@@ -28,6 +33,10 @@ namespace MyGame
         public float GetShield()
         {
             return shield;
+        }
+        public static int GetPickups()
+        {
+            return power_pickups;
         }
 
         public string SetName()
@@ -65,6 +74,7 @@ namespace MyGame
                 if(shield > 100) shield = 100;
                 Console.WriteLine(shield);
             }
+            power_pickups++;
         }
     }
 }
