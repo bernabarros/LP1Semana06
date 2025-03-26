@@ -33,7 +33,7 @@ namespace MyGame
         public string SetName()
         {
             string newname = Console.ReadLine();
-            newname = newname.Substring(0,8);
+            newname = newname.Remove(8);
             name = newname;
             return name;
         }
