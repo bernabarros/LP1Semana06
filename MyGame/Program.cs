@@ -19,6 +19,11 @@ namespace MyGame
                 Console.WriteLine($"{enemies[j].GetName()} "+ 
                 $"{enemies[j].GetHealth()} {enemies[j].GetShield()}");
             }
+
+            enemies[0].PickupPowerUp(PowerUp.Shield,50);
+            enemies[0].TakeDamage(75);
+
+            enemies[0].PickupPowerUp(PowerUp.Health,25);
         }
     }
 }

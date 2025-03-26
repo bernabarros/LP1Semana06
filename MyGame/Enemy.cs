@@ -48,6 +48,23 @@ namespace MyGame
                 health -= damageStillToInflict;
                 if(health < 0) health = 0;
             }
+            Console.WriteLine(shield);
+            Console.WriteLine(health);
+        }
+        public void PickupPowerUp(PowerUp power_up, float power_value)
+        {
+            if(power_up == PowerUp.Health)
+            {
+                health += power_value;
+                if(health > 100) health = 100;
+                Console.WriteLine(health);
+            }
+            else if(power_up == PowerUp.Shield)
+            {
+                shield += power_value;
+                if(shield > 100) shield = 100;
+                Console.WriteLine(shield);
+            }
         }
     }
 }
