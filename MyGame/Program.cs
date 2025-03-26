@@ -11,7 +11,7 @@ namespace MyGame
 
             for(int i = 0; i < num_enemy; i++)
             {
-                Console.Write($"Nome do inimigo: ");
+                Console.Write($"Nome do inimigo {i+1}: ");
                 enemies[i] = new Enemy();
             }
             for(int j = 0; j < num_enemy; j++)
