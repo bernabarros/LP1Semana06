@@ -11,9 +11,9 @@ namespace MyRoguelike
         private float health;
         private float shield;
         static int power_pickups;
-        public Enemy ()
+        public Enemy (string name)
         {
-            this.name = SetName();
+            this.name = name;
             health = 100;
             shield = 0;
         }
