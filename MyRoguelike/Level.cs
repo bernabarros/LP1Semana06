@@ -44,7 +44,8 @@ namespace MyRoguelike
                 }
                 else
                 {
-                    Console.WriteLine($"{i.ToOrdinalWords()} room = {room_set[i]}".Transform(To.TitleCase));
+                    Console.WriteLine($"{i.ToOrdinalWords()}".Transform(To.TitleCase)+ 
+                    $" room: {room_set[i]}");
                 }
             }
         }
