@@ -25,7 +25,7 @@ namespace MyGame
 
             enemies[0].PickupPowerUp(PowerUp.Health,25);
 
-            Console.WriteLine(Enemy.GetPickups());
+            Console.WriteLine($"Pickups: {Enemy.GetPickups()}");
         }
     }
 }
