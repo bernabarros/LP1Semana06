@@ -31,7 +31,7 @@ namespace MyRoguelike
 
         public Toughness GetToughness()
         {
-            return difficulty_set;
+            return level_dif;
         }
         public int GetNumRooms()
         {
