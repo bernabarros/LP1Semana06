@@ -21,14 +21,8 @@ namespace Chronos
             crono1.Stop();
             crono2.Stop();
 
-            //TimeSpan ts1 = crono1.Elapsed;
-            //TimeSpan ts2 = crono2.Elapsed;
-
-            //elapsedtime1 = String.Format("{0:f4}", ts1.Milliseconds);
-            //elapsedtime2 = String.Format("{0:f4}", ts2.Milliseconds);
-
-            Console.WriteLine($"{crono1.Elapsed.TotalMilliseconds / 1000:f4}");
-            Console.WriteLine($"{crono2.Elapsed.TotalMilliseconds / 1000:f4}");
+            Console.WriteLine($"{crono1.Elapsed.TotalSeconds:f4}");
+            Console.WriteLine($"{crono2.Elapsed.TotalSeconds:f4}");
         }
     }
 }
