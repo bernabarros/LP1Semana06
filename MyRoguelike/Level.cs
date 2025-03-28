@@ -10,12 +10,18 @@ namespace MyRoguelike
     {
         private int num_room;
         private Toughness difficulty_set;
+        private Toughness chosen_dif;
+        static Toughness level_dif;
         private Level [] level;
     
-        public Level(int room_num,)
+        public Level(int room_num, Toughness difficulty_set)
         {
             level = new Level [room_num];
-            level = Toughness.;
+            chosen_dif = difficulty_set;
+        }
+        static Level()
+        {
+            level_dif = Toughness.Nightmare;
         }
         public Level SetEnemyInRoom(int room_num,Enemy enemy)
         {
@@ -34,11 +40,7 @@ namespace MyRoguelike
         
         public PrintEnemies()
         {
-        }
-
-        public static implicit operator Level(Enemy v)
-        {
-            throw new NotImplementedException();
+            
         }
     } 
 }
